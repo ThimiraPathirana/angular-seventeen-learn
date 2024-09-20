@@ -1,2 +1,12 @@
-<h2>Crew Component is stand alone false</h2>
-<p>add-user works!</p>
+<h2>Add Component is stand alone false</h2>
+<p>1.add-user works as lazi loading Component </p>
+<!-- {
+    path: "add-user",
+    loadComponent: () => import('./admin/add-user/add-user.component').then(m=> m.AddUserComponent)
+} -->
+
+<p>1.add-user works as not lazi loading Component </p>
+<!-- {
+    path: "add-user",
+    component: AddUserComponent
+} -->
