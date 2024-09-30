@@ -9,6 +9,9 @@ import { AddUserComponent } from './add-user/add-user.component';
   ],
   imports: [
     CommonModule
+  ],
+  exports:[
+    AddUserComponent
   ]
 })
 export class AdminModule { }
