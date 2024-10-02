@@ -2,6 +2,7 @@ import { Routes } from '@angular/router';
 import { AddUserComponent } from './admin/add-user/add-user.component';
 import { BuiltInPipesComponent } from './built-in-pipes/built-in-pipes.component';
 import { CustomPipesComponent } from './custom-pipes/custom-pipes.component';
+import { ImpurePipesComponent } from './impure-pipes/impure-pipes.component';
 
 export const routes: Routes = [
   /** lazi loading module     1.loadChildren */
@@ -34,5 +35,9 @@ export const routes: Routes = [
   {
     path: 'custom-pipes',
     component: CustomPipesComponent
+  },
+  {
+    path: 'impure-pipes',
+    component: ImpurePipesComponent
   }
 ];

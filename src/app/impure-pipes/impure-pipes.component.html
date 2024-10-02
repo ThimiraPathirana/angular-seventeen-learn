@@ -1,0 +1,16 @@
+<p>impure-pipes works!</p>
+
+<li> First we need to implement custom pipe - ImpurePipe in ts file </li>
+<li> ImpurePipe will be trigger every data change or not </li>
+
+<h2>Impure pipe example</h2>
+<div>
+    <Label>Enter user name</Label>
+    <input type="text" [(ngModel)]=searchTerm/>
+</div>
+
+<ul>
+    <li *ngFor="let user of users | impure: searchTerm">
+        {{user}}
+    </li>
+</ul>
