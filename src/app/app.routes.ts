@@ -4,6 +4,7 @@ import { BuiltInPipesComponent } from './built-in-pipes/built-in-pipes.component
 import { CustomPipesComponent } from './custom-pipes/custom-pipes.component';
 import { ImpurePipesComponent } from './impure-pipes/impure-pipes.component';
 import { StructuralComponent } from './directive/structural/structural.component';
+import { AttributeComponent } from './directive/attribute/attribute.component';
 
 export const routes: Routes = [
   /** lazi loading module     1.loadChildren */
@@ -44,5 +45,9 @@ export const routes: Routes = [
   {
     path: 'structure',
     component: StructuralComponent
+  },
+  {
+    path: 'attribute',
+    component: AttributeComponent
   }
 ];

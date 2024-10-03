@@ -1,0 +1,22 @@
+<p>attribute works!</p>
+
+<h2>NgClass directive</h2>
+
+<div [ngClass]="{isActive: isActive, isInactive: !isActive }">
+    This is the example usage of NgClass directive
+</div>
+
+<button (click)="toggleActive()">Click is Active or not</button>
+
+<h2>NgStyle directive</h2>
+
+<div [ngStyle]="{ 'height':'100px', 'background-color': backgroundColor, 'font-size': size }">
+    This is the example usage of NgStyle directive
+</div>
+
+<button (click)="changeStyle()">Click Change style</button>
+
+<h2>NgModel directive</h2>
+
+<input [(ngModel)]="name" placeholder="Enter user name"/>
+<p> user name : {{name}}
