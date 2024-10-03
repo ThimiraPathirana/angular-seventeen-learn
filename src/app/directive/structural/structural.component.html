@@ -1,0 +1,42 @@
+<p>structural works!</p>
+
+<h2>If directive</h2>
+<li>With old ngIf syntax</li>
+<div *ngIf="a>b">
+    A is grater than B
+</div>
+<div *ngIf="b>a">
+    B is grater than A
+</div>
+
+<li>With new if syntax</li>
+@if(a>b) {
+    {{a}} is grater than {{b}}
+} @else {
+    {{b}} is grater than {{a}}
+}
+
+<h2>For directive</h2>
+
+<li>With old ngFor syntax</li>
+<div *ngFor="let user of users">{{user}}</div>
+
+<li>With new for syntax</li>
+@for(user of users; track user) {
+    <div>{{user}}</div>
+}
+
+<h2>Switch directive</h2>
+<li>With new switch case syntax</li>
+
+@switch(role) {
+    @case('admin') {
+        <p>Admin user role</p>
+    }
+    @case('manager') {
+        <p>Manager user role</p>
+    }
+    @default {
+        <p>Default user role</p>
+    }
+}
