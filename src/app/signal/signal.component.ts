@@ -23,6 +23,7 @@ export class SignalComponent {
 
   setUpdate() {
     this.counter.set(20);
+    this.effectTrigger();
   }
 
   counterUpdate() {
@@ -37,5 +38,23 @@ export class SignalComponent {
     })
   }
 
- 
+  /** effect calling */
+  // constructor() {
+  //   effect(() => {
+  //     console.log('Value of counter - ' + this.counter())
+  //     console.log('Value of title - ' + this.video().title)
+  //   })
+  // }
+
+  /** effect calling */
+  constructor(private inject: Injector) {
+  }
+
+  effectTrigger() {
+    effect(() => {
+      console.log('Value of lenght - ' + this.userName.name)
+      console.log('Value of counter - ' + this.counter())
+      console.log('Value of title - ' + this.video().title)
+    }, {injector: this.inject})
+  }
 }
