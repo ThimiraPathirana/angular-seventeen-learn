@@ -1,0 +1,23 @@
+<p>signal works!</p>
+
+<h2>Number example</h2>
+<p>Counter value is - {{counter}}</p>
+<p>Counter value is - {{counter()}}</p>
+
+<h2>String example</h2>
+<p>User value is - {{userName()}}</p>
+
+<h2>Array example</h2>
+<p>Users value is - {{users()}}</p>
+
+<h2>Object example</h2>
+<p>Video title is - {{video().title}}</p>
+<p>Video description is - {{video().description}}</p>
+
+<h2>Number set example</h2>
+<button (click)="setUpdate()">Set</button>
+<h2>Number update example</h2>
+<button (click)="counterUpdate()">Update</button>
+
+<h2>Object update example</h2>
+<button (click)="counterVideo()">Update</button>

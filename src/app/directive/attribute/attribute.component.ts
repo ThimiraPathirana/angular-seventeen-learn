@@ -24,4 +24,6 @@ export class AttributeComponent {
     this.backgroundColor = 'red';
     this.size = '30px';
   }
+
+  
 }

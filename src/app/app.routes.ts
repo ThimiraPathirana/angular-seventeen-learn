@@ -5,6 +5,7 @@ import { CustomPipesComponent } from './custom-pipes/custom-pipes.component';
 import { ImpurePipesComponent } from './impure-pipes/impure-pipes.component';
 import { StructuralComponent } from './directive/structural/structural.component';
 import { AttributeComponent } from './directive/attribute/attribute.component';
+import { SignalComponent } from './signal/signal.component';
 
 export const routes: Routes = [
   /** lazi loading module     1.loadChildren */
@@ -49,5 +50,9 @@ export const routes: Routes = [
   {
     path: 'attribute',
     component: AttributeComponent
+  },
+  {
+    path: 'signal',
+    component: SignalComponent
   }
 ];
